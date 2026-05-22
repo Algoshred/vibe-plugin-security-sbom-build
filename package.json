@@ -6,7 +6,7 @@
   "types": "./dist/index.d.ts",
   "description": "Syft + Grype provider for the build lifecycle stage. Generates a CycloneDX SBOM and scans it for known vulnerabilities. Registers as a security.sbom provider with @vibecontrols/vibe-plugin-security.",
   "engines": {
-    "bun": ">=1.3.0"
+    "bun": ">=1.3.14"
   },
   "author": {
     "name": "Vignesh T.V",

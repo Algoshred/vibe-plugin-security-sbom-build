@@ -1,0 +1,3 @@
+# BOFF-10675: reformat with bun fmt
+# Ignore the formatting-only commit in blame.
+f4d0da66cf6642bc1346de2eec9486b5f771b682

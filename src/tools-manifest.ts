@@ -6,12 +6,12 @@
  *   curl -sL https://github.com/anchore/syft/releases/download/v<VER>/syft_<VER>_checksums.txt
  *   curl -sL https://github.com/anchore/grype/releases/download/v<VER>/grype_<VER>_checksums.txt
  */
-import type { ToolManifest } from "@vibecontrols/vibe-plugin-security/tool-installer";
+import type { ToolManifestEntry } from "@vibecontrols/vibe-plugin-security/tool-installer";
 
 export const SYFT_VERSION = "1.18.1";
 export const GRYPE_VERSION = "0.85.0";
 
-export const TOOLS_MANIFEST: ToolManifest = {
+export const TOOLS_MANIFEST: Record<"syft" | "grype", ToolManifestEntry> = {
   syft: {
     version: SYFT_VERSION,
     binaryName: "syft",

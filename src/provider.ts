@@ -47,8 +47,7 @@ export class SbomBuildProvider implements SecurityProvider {
   }
 
   async ensureToolInstalled(): Promise<void> {
-    const dataDir =
-      this.host?.getDataDir?.() ?? path.join(os.homedir(), ".boff/vibecontrols");
+    const dataDir = this.host?.getDataDir?.() ?? path.join(os.homedir(), ".boff/vibecontrols");
     const ctx = {
       dataDir,
       log: {
